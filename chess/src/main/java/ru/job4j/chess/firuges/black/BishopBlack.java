@@ -48,7 +48,7 @@ public class BishopBlack implements Figure {
         boolean rsl = false;
         int x = (dest.getX() - source.getX());
         int y = (dest.getY() - source.getY());
-        if ( abs(x)== abs(y)) {
+        if (abs(x) == abs(y)) {
             rsl = true;
         }
         return rsl;

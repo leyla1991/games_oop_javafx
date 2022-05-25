@@ -28,7 +28,9 @@ public class BishopBlackTest {
     public void whenWayTrue() {
         BishopBlack run = new BishopBlack(Cell.C1);
         Cell[] steps = run.way(Cell.G5);
-        Cell[] cell = new Cell[] {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
+        Cell[] cell = new Cell[] {
+                Cell.D2, Cell.E3, Cell.F4, Cell.G5
+        };
         assertThat(steps, is(cell));
     }
 }
