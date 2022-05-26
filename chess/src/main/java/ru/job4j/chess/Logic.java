@@ -25,11 +25,11 @@ public final class Logic {
             for (int y = 0; y < steps.length; y++) {
                 Figure figure = figures[i];
                 if (figure != null && figure.position().equals(steps[y])) {
-                    return true;
+                   throw new OccupiedCellException();
                 }
             }
         }
-        throw new OccupiedCellException();
+        return true;
     }
 
     public void clean() {
